@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160D28BC1ECB080B0097892B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28BB1ECB080B0097892B /* main.m */; };
+		160D28BF1ECB080B0097892B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28BE1ECB080B0097892B /* AppDelegate.m */; };
+		160D28C71ECB080B0097892B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160D28C61ECB080B0097892B /* Assets.xcassets */; };
+		160D28CA1ECB080B0097892B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160D28C81ECB080B0097892B /* LaunchScreen.storyboard */; };
+		160D28FD1ECB0AAA0097892B /* MessagesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28F41ECB0AAA0097892B /* MessagesData.m */; };
+		160D28FE1ECB0AAA0097892B /* AsyncPhotoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28F61ECB0AAA0097892B /* AsyncPhotoMediaItem.m */; };
+		160D28FF1ECB0AAA0097892B /* AsyncVideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28F81ECB0AAA0097892B /* AsyncVideoMediaItem.m */; };
+		160D29001ECB0AAA0097892B /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28FA1ECB0AAA0097892B /* Chat.m */; };
+		160D29011ECB0AAA0097892B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D28FC1ECB0AAA0097892B /* User.m */; };
+		160D291D1ECB0ADB0097892B /* LeftSideMenuTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29041ECB0ADB0097892B /* LeftSideMenuTVC.m */; };
+		160D291E1ECB0ADB0097892B /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29061ECB0ADB0097892B /* LoginVC.m */; };
+		160D291F1ECB0ADB0097892B /* RegisterOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29081ECB0ADB0097892B /* RegisterOneVC.m */; };
+		160D29201ECB0ADB0097892B /* RegisterTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D290A1ECB0ADB0097892B /* RegisterTwoVC.m */; };
+		160D29211ECB0ADB0097892B /* UsersTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D290C1ECB0ADB0097892B /* UsersTVC.m */; };
+		160D29221ECB0ADB0097892B /* MessagesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D290E1ECB0ADB0097892B /* MessagesVC.m */; };
+		160D29231ECB0ADB0097892B /* ChatsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29101ECB0ADB0097892B /* ChatsListVC.m */; };
+		160D29241ECB0ADB0097892B /* ChatManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29121ECB0ADB0097892B /* ChatManageVC.m */; };
+		160D29251ECB0ADB0097892B /* ChatPhotoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29141ECB0ADB0097892B /* ChatPhotoEditVC.m */; };
+		160D29261ECB0ADB0097892B /* AddChatUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29161ECB0ADB0097892B /* AddChatUsers.m */; };
+		160D29271ECB0ADB0097892B /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29181ECB0ADB0097892B /* PhotoEditorVC.m */; };
+		160D29281ECB0ADB0097892B /* FullScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D291A1ECB0ADB0097892B /* FullScreenVC.m */; };
+		160D29291ECB0ADB0097892B /* NewProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D291C1ECB0ADB0097892B /* NewProfileVC.m */; };
+		160D292D1ECB0AF00097892B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D292C1ECB0AF00097892B /* SWRevealViewController.m */; };
+		160D29341ECB0B1D0097892B /* NewProfileInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29311ECB0B1D0097892B /* NewProfileInfoCell.m */; };
+		160D29351ECB0B1D0097892B /* AddProfileInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29331ECB0B1D0097892B /* AddProfileInfoCell.m */; };
+		160D293B1ECB0B2F0097892B /* ChatUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29381ECB0B2F0097892B /* ChatUserCell.m */; };
+		160D293C1ECB0B2F0097892B /* AddingUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D293A1ECB0B2F0097892B /* AddingUserCell.m */; };
+		160D29431ECB0B370097892B /* ChatListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D293E1ECB0B370097892B /* ChatListCell.m */; };
+		160D29441ECB0B370097892B /* PeopleListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29401ECB0B370097892B /* PeopleListCell.m */; };
+		160D29451ECB0B370097892B /* LeftSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29421ECB0B370097892B /* LeftSideMenuCell.m */; };
+		160D294F1ECB0B4C0097892B /* StringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29481ECB0B4C0097892B /* StringValidator.m */; };
+		160D29501ECB0B4C0097892B /* FIRStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D294A1ECB0B4C0097892B /* FIRStorageManager.m */; };
+		160D29511ECB0B4C0097892B /* FIRServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D294C1ECB0B4C0097892B /* FIRServerManager.m */; };
+		160D29521ECB0B4C0097892B /* CloudinaryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D294E1ECB0B4C0097892B /* CloudinaryManager.m */; };
+		160D29571ECB0B5D0097892B /* FacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29541ECB0B5D0097892B /* FacebookManager.m */; };
+		160D29581ECB0B5D0097892B /* GoogleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29561ECB0B5D0097892B /* GoogleManager.m */; };
+		160D295C1ECB0BE10097892B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160D295B1ECB0BE10097892B /* Main.storyboard */; };
+		160D295E1ECB0BF10097892B /* FullScreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160D295D1ECB0BF10097892B /* FullScreenVC.storyboard */; };
+		160D29631ECB0C340097892B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D29601ECB0C340097892B /* Bolts.framework */; };
+		160D29641ECB0C340097892B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D29611ECB0C340097892B /* FBSDKCoreKit.framework */; };
+		160D29651ECB0C340097892B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D29621ECB0C340097892B /* FBSDKLoginKit.framework */; };
+		160D29671ECB0D520097892B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 160D29661ECB0D520097892B /* GoogleService-Info.plist */; };
+		160D29721ECB10380097892B /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D296D1ECB10380097892B /* JSONModel.m */; };
+		160D29731ECB10380097892B /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D296F1ECB10380097892B /* JSONModelClassProperty.m */; };
+		160D29741ECB10380097892B /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29711ECB10380097892B /* JSONModelError.m */; };
+		160D297D1ECB10540097892B /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29781ECB10540097892B /* JSONAPI.m */; };
+		160D297E1ECB10540097892B /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D297A1ECB10540097892B /* JSONHTTPClient.m */; };
+		160D297F1ECB10540097892B /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D297C1ECB10540097892B /* JSONModel+networking.m */; };
+		160D29851ECB10660097892B /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29821ECB10660097892B /* JSONKeyMapper.m */; };
+		160D29861ECB10660097892B /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D29841ECB10660097892B /* JSONValueTransformer.m */; };
+		160D298B1ECB10850097892B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D298A1ECB10850097892B /* Reachability.m */; };
+		160D298F1ECB10930097892B /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D298E1ECB10930097892B /* UIScrollView+EmptyDataSet.m */; };
+		16DEB4451ECC38C2002DA113 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DEB4441ECC38C2002DA113 /* Crashlytics.framework */; };
+		16DEB4481ECC4757002DA113 /* TwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DEB4471ECC4757002DA113 /* TwitterManager.m */; };
+		A599C20510DC5BD1F4EF051C /* libPods-FirebaseChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207A4371E3361E5E830DB17 /* libPods-FirebaseChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		160D28B71ECB080B0097892B /* FirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		160D28BB1ECB080B0097892B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		160D28BD1ECB080B0097892B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		160D28BE1ECB080B0097892B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		160D28C61ECB080B0097892B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		160D28C91ECB080B0097892B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		160D28CB1ECB080B0097892B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160D28F31ECB0AAA0097892B /* MessagesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesData.h; sourceTree = "<group>"; };
+		160D28F41ECB0AAA0097892B /* MessagesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesData.m; sourceTree = "<group>"; };
+		160D28F51ECB0AAA0097892B /* AsyncPhotoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AsyncPhotoMediaItem.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D28F61ECB0AAA0097892B /* AsyncPhotoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AsyncPhotoMediaItem.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D28F71ECB0AAA0097892B /* AsyncVideoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AsyncVideoMediaItem.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D28F81ECB0AAA0097892B /* AsyncVideoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AsyncVideoMediaItem.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D28F91ECB0AAA0097892B /* Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Chat.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D28FA1ECB0AAA0097892B /* Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Chat.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D28FB1ECB0AAA0097892B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		160D28FC1ECB0AAA0097892B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		160D29031ECB0ADB0097892B /* LeftSideMenuTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideMenuTVC.h; sourceTree = "<group>"; };
+		160D29041ECB0ADB0097892B /* LeftSideMenuTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideMenuTVC.m; sourceTree = "<group>"; };
+		160D29051ECB0ADB0097892B /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = LoginVC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29061ECB0ADB0097892B /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		160D29071ECB0ADB0097892B /* RegisterOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterOneVC.h; sourceTree = "<group>"; };
+		160D29081ECB0ADB0097892B /* RegisterOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterOneVC.m; sourceTree = "<group>"; };
+		160D29091ECB0ADB0097892B /* RegisterTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTwoVC.h; sourceTree = "<group>"; };
+		160D290A1ECB0ADB0097892B /* RegisterTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTwoVC.m; sourceTree = "<group>"; };
+		160D290B1ECB0ADB0097892B /* UsersTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTVC.h; sourceTree = "<group>"; };
+		160D290C1ECB0ADB0097892B /* UsersTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTVC.m; sourceTree = "<group>"; };
+		160D290D1ECB0ADB0097892B /* MessagesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesVC.h; sourceTree = "<group>"; };
+		160D290E1ECB0ADB0097892B /* MessagesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesVC.m; sourceTree = "<group>"; };
+		160D290F1ECB0ADB0097892B /* ChatsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatsListVC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29101ECB0ADB0097892B /* ChatsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatsListVC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29111ECB0ADB0097892B /* ChatManageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatManageVC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29121ECB0ADB0097892B /* ChatManageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatManageVC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29131ECB0ADB0097892B /* ChatPhotoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatPhotoEditVC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29141ECB0ADB0097892B /* ChatPhotoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatPhotoEditVC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29151ECB0ADB0097892B /* AddChatUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AddChatUsers.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29161ECB0ADB0097892B /* AddChatUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AddChatUsers.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29171ECB0ADB0097892B /* PhotoEditorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEditorVC.h; sourceTree = "<group>"; };
+		160D29181ECB0ADB0097892B /* PhotoEditorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorVC.m; sourceTree = "<group>"; };
+		160D29191ECB0ADB0097892B /* FullScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FullScreenVC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D291A1ECB0ADB0097892B /* FullScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FullScreenVC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D291B1ECB0ADB0097892B /* NewProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewProfileVC.h; sourceTree = "<group>"; };
+		160D291C1ECB0ADB0097892B /* NewProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewProfileVC.m; sourceTree = "<group>"; };
+		160D292B1ECB0AF00097892B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		160D292C1ECB0AF00097892B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		160D29301ECB0B1D0097892B /* NewProfileInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewProfileInfoCell.h; sourceTree = "<group>"; };
+		160D29311ECB0B1D0097892B /* NewProfileInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewProfileInfoCell.m; sourceTree = "<group>"; };
+		160D29321ECB0B1D0097892B /* AddProfileInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AddProfileInfoCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29331ECB0B1D0097892B /* AddProfileInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AddProfileInfoCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29371ECB0B2F0097892B /* ChatUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatUserCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29381ECB0B2F0097892B /* ChatUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatUserCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29391ECB0B2F0097892B /* AddingUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AddingUserCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D293A1ECB0B2F0097892B /* AddingUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AddingUserCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D293D1ECB0B370097892B /* ChatListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatListCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D293E1ECB0B370097892B /* ChatListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatListCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D293F1ECB0B370097892B /* PeopleListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListCell.h; sourceTree = "<group>"; };
+		160D29401ECB0B370097892B /* PeopleListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleListCell.m; sourceTree = "<group>"; };
+		160D29411ECB0B370097892B /* LeftSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideMenuCell.h; sourceTree = "<group>"; };
+		160D29421ECB0B370097892B /* LeftSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideMenuCell.m; sourceTree = "<group>"; };
+		160D29471ECB0B4C0097892B /* StringValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringValidator.h; sourceTree = "<group>"; };
+		160D29481ECB0B4C0097892B /* StringValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringValidator.m; sourceTree = "<group>"; };
+		160D29491ECB0B4C0097892B /* FIRStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FIRStorageManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D294A1ECB0B4C0097892B /* FIRStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FIRStorageManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D294B1ECB0B4C0097892B /* FIRServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FIRServerManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D294C1ECB0B4C0097892B /* FIRServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FIRServerManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D294D1ECB0B4C0097892B /* CloudinaryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CloudinaryManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D294E1ECB0B4C0097892B /* CloudinaryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CloudinaryManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29531ECB0B5D0097892B /* FacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FacebookManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29541ECB0B5D0097892B /* FacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FacebookManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D29551ECB0B5D0097892B /* GoogleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GoogleManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29561ECB0B5D0097892B /* GoogleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoogleManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		160D295B1ECB0BE10097892B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		160D295D1ECB0BF10097892B /* FullScreenVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FullScreenVC.storyboard; sourceTree = "<group>"; };
+		160D295F1ECB0C120097892B /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = constants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		160D29601ECB0C340097892B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		160D29611ECB0C340097892B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		160D29621ECB0C340097892B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		160D29661ECB0D520097892B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		160D29681ECB0EAF0097892B /* FirebaseChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseChat.entitlements; sourceTree = "<group>"; };
+		160D296C1ECB10380097892B /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		160D296D1ECB10380097892B /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		160D296E1ECB10380097892B /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		160D296F1ECB10380097892B /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		160D29701ECB10380097892B /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		160D29711ECB10380097892B /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		160D29751ECB10430097892B /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		160D29771ECB10540097892B /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		160D29781ECB10540097892B /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		160D29791ECB10540097892B /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		160D297A1ECB10540097892B /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		160D297B1ECB10540097892B /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		160D297C1ECB10540097892B /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		160D29811ECB10660097892B /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		160D29821ECB10660097892B /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		160D29831ECB10660097892B /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		160D29841ECB10660097892B /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		160D29871ECB10730097892B /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		160D29891ECB10850097892B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		160D298A1ECB10850097892B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		160D298D1ECB10930097892B /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		160D298E1ECB10930097892B /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		16DEB4441ECC38C2002DA113 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		16DEB4461ECC4757002DA113 /* TwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterManager.h; sourceTree = "<group>"; };
+		16DEB4471ECC4757002DA113 /* TwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterManager.m; sourceTree = "<group>"; };
+		4207A4371E3361E5E830DB17 /* libPods-FirebaseChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirebaseChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40F3BD8954DF70F5A301919 /* Pods-FirebaseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D08F360313DB2153DF177102 /* Pods-FirebaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160D28B41ECB080B0097892B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A599C20510DC5BD1F4EF051C /* libPods-FirebaseChat.a in Frameworks */,
+				16DEB4451ECC38C2002DA113 /* Crashlytics.framework in Frameworks */,
+				160D29641ECB0C340097892B /* FBSDKCoreKit.framework in Frameworks */,
+				160D29651ECB0C340097892B /* FBSDKLoginKit.framework in Frameworks */,
+				160D29631ECB0C340097892B /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160D28AE1ECB080B0097892B = {
+			isa = PBXGroup;
+			children = (
+				160D28B91ECB080B0097892B /* FirebaseChat */,
+				160D28B81ECB080B0097892B /* Products */,
+				68C450953DB211323602F471 /* Pods */,
+				B9D436DEA7C044AE1D113AB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		160D28B81ECB080B0097892B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				160D28B71ECB080B0097892B /* FirebaseChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		160D28B91ECB080B0097892B /* FirebaseChat */ = {
+			isa = PBXGroup;
+			children = (
+				160D29681ECB0EAF0097892B /* FirebaseChat.entitlements */,
+				160D28F21ECB0A9F0097892B /* Models */,
+				160D29691ECB0FCE0097892B /* Library */,
+				160D295F1ECB0C120097892B /* constants.h */,
+				160D28BD1ECB080B0097892B /* AppDelegate.h */,
+				160D28BE1ECB080B0097892B /* AppDelegate.m */,
+				160D295A1ECB0B8E0097892B /* Storyboard */,
+				160D292E1ECB0AF50097892B /* CustomCells */,
+				160D292A1ECB0AE10097892B /* SWRevealViewController */,
+				160D29461ECB0B440097892B /* Managers */,
+				160D29021ECB0ABA0097892B /* Controller */,
+				160D28BA1ECB080B0097892B /* Supporting Files */,
+				160D28C61ECB080B0097892B /* Assets.xcassets */,
+				160D29661ECB0D520097892B /* GoogleService-Info.plist */,
+				160D28CB1ECB080B0097892B /* Info.plist */,
+			);
+			path = FirebaseChat;
+			sourceTree = "<group>";
+		};
+		160D28BA1ECB080B0097892B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				160D28BB1ECB080B0097892B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		160D28F21ECB0A9F0097892B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				160D28F31ECB0AAA0097892B /* MessagesData.h */,
+				160D28F41ECB0AAA0097892B /* MessagesData.m */,
+				160D28F51ECB0AAA0097892B /* AsyncPhotoMediaItem.h */,
+				160D28F61ECB0AAA0097892B /* AsyncPhotoMediaItem.m */,
+				160D28F71ECB0AAA0097892B /* AsyncVideoMediaItem.h */,
+				160D28F81ECB0AAA0097892B /* AsyncVideoMediaItem.m */,
+				160D28F91ECB0AAA0097892B /* Chat.h */,
+				160D28FA1ECB0AAA0097892B /* Chat.m */,
+				160D28FB1ECB0AAA0097892B /* User.h */,
+				160D28FC1ECB0AAA0097892B /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		160D29021ECB0ABA0097892B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1671DC591ECC18C100B98D95 /* SideMenu */,
+				1671DC5A1ECC18F800B98D95 /* LRF */,
+				1671DC621ECC1AC100B98D95 /* People */,
+				1671DC5C1ECC19B000B98D95 /* Messages */,
+				1671DC611ECC1AA100B98D95 /* Update Profile */,
+				1671DC601ECC1A6D00B98D95 /* Message */,
+				1671DC5F1ECC1A5000B98D95 /* EditGroup */,
+				1671DC5E1ECC1A2100B98D95 /* Chat photo */,
+				1671DC5D1ECC19DA00B98D95 /* Add User In Chat */,
+				1671DC5B1ECC198A00B98D95 /* Open Image */,
+				160D29171ECB0ADB0097892B /* PhotoEditorVC.h */,
+				160D29181ECB0ADB0097892B /* PhotoEditorVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		160D292A1ECB0AE10097892B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				160D292B1ECB0AF00097892B /* SWRevealViewController.h */,
+				160D292C1ECB0AF00097892B /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		160D292E1ECB0AF50097892B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				160D293D1ECB0B370097892B /* ChatListCell.h */,
+				160D293E1ECB0B370097892B /* ChatListCell.m */,
+				160D293F1ECB0B370097892B /* PeopleListCell.h */,
+				160D29401ECB0B370097892B /* PeopleListCell.m */,
+				160D29411ECB0B370097892B /* LeftSideMenuCell.h */,
+				160D29421ECB0B370097892B /* LeftSideMenuCell.m */,
+				160D29361ECB0B280097892B /* ChatManageCells */,
+				160D292F1ECB0B090097892B /* Profile Cells */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		160D292F1ECB0B090097892B /* Profile Cells */ = {
+			isa = PBXGroup;
+			children = (
+				160D29301ECB0B1D0097892B /* NewProfileInfoCell.h */,
+				160D29311ECB0B1D0097892B /* NewProfileInfoCell.m */,
+				160D29321ECB0B1D0097892B /* AddProfileInfoCell.h */,
+				160D29331ECB0B1D0097892B /* AddProfileInfoCell.m */,
+			);
+			name = "Profile Cells";
+			sourceTree = "<group>";
+		};
+		160D29361ECB0B280097892B /* ChatManageCells */ = {
+			isa = PBXGroup;
+			children = (
+				160D29371ECB0B2F0097892B /* ChatUserCell.h */,
+				160D29381ECB0B2F0097892B /* ChatUserCell.m */,
+				160D29391ECB0B2F0097892B /* AddingUserCell.h */,
+				160D293A1ECB0B2F0097892B /* AddingUserCell.m */,
+			);
+			name = ChatManageCells;
+			sourceTree = "<group>";
+		};
+		160D29461ECB0B440097892B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				160D29591ECB0B660097892B /* Social */,
+				160D29471ECB0B4C0097892B /* StringValidator.h */,
+				160D29481ECB0B4C0097892B /* StringValidator.m */,
+				160D29491ECB0B4C0097892B /* FIRStorageManager.h */,
+				160D294A1ECB0B4C0097892B /* FIRStorageManager.m */,
+				160D294B1ECB0B4C0097892B /* FIRServerManager.h */,
+				160D294C1ECB0B4C0097892B /* FIRServerManager.m */,
+				160D294D1ECB0B4C0097892B /* CloudinaryManager.h */,
+				160D294E1ECB0B4C0097892B /* CloudinaryManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		160D29591ECB0B660097892B /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				160D29551ECB0B5D0097892B /* GoogleManager.h */,
+				160D29561ECB0B5D0097892B /* GoogleManager.m */,
+				160D29531ECB0B5D0097892B /* FacebookManager.h */,
+				160D29541ECB0B5D0097892B /* FacebookManager.m */,
+				16DEB4461ECC4757002DA113 /* TwitterManager.h */,
+				16DEB4471ECC4757002DA113 /* TwitterManager.m */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		160D295A1ECB0B8E0097892B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				160D295B1ECB0BE10097892B /* Main.storyboard */,
+				160D295D1ECB0BF10097892B /* FullScreenVC.storyboard */,
+				160D28C81ECB080B0097892B /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		160D29691ECB0FCE0097892B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				160D298C1ECB108D0097892B /* UIScrollView+EmptyDataSet */,
+				160D29881ECB107E0097892B /* Rechability */,
+				160D296A1ECB10260097892B /* JSONModel */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		160D296A1ECB10260097892B /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				160D29871ECB10730097892B /* module.modulemap */,
+				160D29801ECB105D0097892B /* JSONModelTransformations */,
+				160D29761ECB104C0097892B /* JSONModelNetworking */,
+				160D29751ECB10430097892B /* JSONModelLib.h */,
+				160D296B1ECB102F0097892B /* JSONModel */,
+			);
+			name = JSONModel;
+			sourceTree = "<group>";
+		};
+		160D296B1ECB102F0097892B /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				160D296C1ECB10380097892B /* JSONModel.h */,
+				160D296D1ECB10380097892B /* JSONModel.m */,
+				160D296E1ECB10380097892B /* JSONModelClassProperty.h */,
+				160D296F1ECB10380097892B /* JSONModelClassProperty.m */,
+				160D29701ECB10380097892B /* JSONModelError.h */,
+				160D29711ECB10380097892B /* JSONModelError.m */,
+			);
+			name = JSONModel;
+			sourceTree = "<group>";
+		};
+		160D29761ECB104C0097892B /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				160D29771ECB10540097892B /* JSONAPI.h */,
+				160D29781ECB10540097892B /* JSONAPI.m */,
+				160D29791ECB10540097892B /* JSONHTTPClient.h */,
+				160D297A1ECB10540097892B /* JSONHTTPClient.m */,
+				160D297B1ECB10540097892B /* JSONModel+networking.h */,
+				160D297C1ECB10540097892B /* JSONModel+networking.m */,
+			);
+			name = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		160D29801ECB105D0097892B /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				160D29811ECB10660097892B /* JSONKeyMapper.h */,
+				160D29821ECB10660097892B /* JSONKeyMapper.m */,
+				160D29831ECB10660097892B /* JSONValueTransformer.h */,
+				160D29841ECB10660097892B /* JSONValueTransformer.m */,
+			);
+			name = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		160D29881ECB107E0097892B /* Rechability */ = {
+			isa = PBXGroup;
+			children = (
+				160D29891ECB10850097892B /* Reachability.h */,
+				160D298A1ECB10850097892B /* Reachability.m */,
+			);
+			name = Rechability;
+			sourceTree = "<group>";
+		};
+		160D298C1ECB108D0097892B /* UIScrollView+EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				160D298D1ECB10930097892B /* UIScrollView+EmptyDataSet.h */,
+				160D298E1ECB10930097892B /* UIScrollView+EmptyDataSet.m */,
+			);
+			name = "UIScrollView+EmptyDataSet";
+			sourceTree = "<group>";
+		};
+		1671DC591ECC18C100B98D95 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				160D29031ECB0ADB0097892B /* LeftSideMenuTVC.h */,
+				160D29041ECB0ADB0097892B /* LeftSideMenuTVC.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		1671DC5A1ECC18F800B98D95 /* LRF */ = {
+			isa = PBXGroup;
+			children = (
+				160D29051ECB0ADB0097892B /* LoginVC.h */,
+				160D29061ECB0ADB0097892B /* LoginVC.m */,
+				160D29071ECB0ADB0097892B /* RegisterOneVC.h */,
+				160D29081ECB0ADB0097892B /* RegisterOneVC.m */,
+				160D29091ECB0ADB0097892B /* RegisterTwoVC.h */,
+				160D290A1ECB0ADB0097892B /* RegisterTwoVC.m */,
+			);
+			name = LRF;
+			sourceTree = "<group>";
+		};
+		1671DC5B1ECC198A00B98D95 /* Open Image */ = {
+			isa = PBXGroup;
+			children = (
+				160D29191ECB0ADB0097892B /* FullScreenVC.h */,
+				160D291A1ECB0ADB0097892B /* FullScreenVC.m */,
+			);
+			name = "Open Image";
+			sourceTree = "<group>";
+		};
+		1671DC5C1ECC19B000B98D95 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				160D290F1ECB0ADB0097892B /* ChatsListVC.h */,
+				160D29101ECB0ADB0097892B /* ChatsListVC.m */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		1671DC5D1ECC19DA00B98D95 /* Add User In Chat */ = {
+			isa = PBXGroup;
+			children = (
+				160D29151ECB0ADB0097892B /* AddChatUsers.h */,
+				160D29161ECB0ADB0097892B /* AddChatUsers.m */,
+			);
+			name = "Add User In Chat";
+			sourceTree = "<group>";
+		};
+		1671DC5E1ECC1A2100B98D95 /* Chat photo */ = {
+			isa = PBXGroup;
+			children = (
+				160D29131ECB0ADB0097892B /* ChatPhotoEditVC.h */,
+				160D29141ECB0ADB0097892B /* ChatPhotoEditVC.m */,
+			);
+			name = "Chat photo";
+			sourceTree = "<group>";
+		};
+		1671DC5F1ECC1A5000B98D95 /* EditGroup */ = {
+			isa = PBXGroup;
+			children = (
+				160D29111ECB0ADB0097892B /* ChatManageVC.h */,
+				160D29121ECB0ADB0097892B /* ChatManageVC.m */,
+			);
+			name = EditGroup;
+			sourceTree = "<group>";
+		};
+		1671DC601ECC1A6D00B98D95 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				160D290D1ECB0ADB0097892B /* MessagesVC.h */,
+				160D290E1ECB0ADB0097892B /* MessagesVC.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		1671DC611ECC1AA100B98D95 /* Update Profile */ = {
+			isa = PBXGroup;
+			children = (
+				160D291B1ECB0ADB0097892B /* NewProfileVC.h */,
+				160D291C1ECB0ADB0097892B /* NewProfileVC.m */,
+			);
+			name = "Update Profile";
+			sourceTree = "<group>";
+		};
+		1671DC621ECC1AC100B98D95 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				160D290B1ECB0ADB0097892B /* UsersTVC.h */,
+				160D290C1ECB0ADB0097892B /* UsersTVC.m */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		68C450953DB211323602F471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A40F3BD8954DF70F5A301919 /* Pods-FirebaseChat.debug.xcconfig */,
+				D08F360313DB2153DF177102 /* Pods-FirebaseChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9D436DEA7C044AE1D113AB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16DEB4441ECC38C2002DA113 /* Crashlytics.framework */,
+				160D29601ECB0C340097892B /* Bolts.framework */,
+				160D29611ECB0C340097892B /* FBSDKCoreKit.framework */,
+				160D29621ECB0C340097892B /* FBSDKLoginKit.framework */,
+				4207A4371E3361E5E830DB17 /* libPods-FirebaseChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		160D28B61ECB080B0097892B /* FirebaseChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160D28CE1ECB080B0097892B /* Build configuration list for PBXNativeTarget "FirebaseChat" */;
+			buildPhases = (
+				E4BFC328D7FC3E903E690C09 /* [CP] Check Pods Manifest.lock */,
+				160D28B31ECB080B0097892B /* Sources */,
+				160D28B41ECB080B0097892B /* Frameworks */,
+				160D28B51ECB080B0097892B /* Resources */,
+				92A74556C1D92268EE7E42FA /* [CP] Embed Pods Frameworks */,
+				4A7271E6056D5F75117A89E3 /* [CP] Copy Pods Resources */,
+				16DEB4431ECC387B002DA113 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirebaseChat;
+			productName = FirebaseChat;
+			productReference = 160D28B71ECB080B0097892B /* FirebaseChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		160D28AF1ECB080B0097892B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Novus Logics";
+				TargetAttributes = {
+					160D28B61ECB080B0097892B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RWTS9RG3UW;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 160D28B21ECB080B0097892B /* Build configuration list for PBXProject "FirebaseChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 160D28AE1ECB080B0097892B;
+			productRefGroup = 160D28B81ECB080B0097892B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				160D28B61ECB080B0097892B /* FirebaseChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		160D28B51ECB080B0097892B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160D28CA1ECB080B0097892B /* LaunchScreen.storyboard in Resources */,
+				160D28C71ECB080B0097892B /* Assets.xcassets in Resources */,
+				160D295E1ECB0BF10097892B /* FullScreenVC.storyboard in Resources */,
+				160D295C1ECB0BE10097892B /* Main.storyboard in Resources */,
+				160D29671ECB0D520097892B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16DEB4431ECC387B002DA113 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 41813475b3330d44e8e4a2bc03d6743d50a9784c d4da7404afbea0c4ada87d02e146cb6f7ee5b3dbcce733c43fc607dba4ee01ab";
+		};
+		4A7271E6056D5F75117A89E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A74556C1D92268EE7E42FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BFC328D7FC3E903E690C09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		160D28B31ECB080B0097892B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160D29511ECB0B4C0097892B /* FIRServerManager.m in Sources */,
+				160D29011ECB0AAA0097892B /* User.m in Sources */,
+				160D29741ECB10380097892B /* JSONModelError.m in Sources */,
+				160D29451ECB0B370097892B /* LeftSideMenuCell.m in Sources */,
+				160D291D1ECB0ADB0097892B /* LeftSideMenuTVC.m in Sources */,
+				160D29341ECB0B1D0097892B /* NewProfileInfoCell.m in Sources */,
+				160D29201ECB0ADB0097892B /* RegisterTwoVC.m in Sources */,
+				160D297F1ECB10540097892B /* JSONModel+networking.m in Sources */,
+				160D29441ECB0B370097892B /* PeopleListCell.m in Sources */,
+				160D291E1ECB0ADB0097892B /* LoginVC.m in Sources */,
+				160D28BF1ECB080B0097892B /* AppDelegate.m in Sources */,
+				160D29861ECB10660097892B /* JSONValueTransformer.m in Sources */,
+				160D29261ECB0ADB0097892B /* AddChatUsers.m in Sources */,
+				160D29221ECB0ADB0097892B /* MessagesVC.m in Sources */,
+				160D293B1ECB0B2F0097892B /* ChatUserCell.m in Sources */,
+				160D29271ECB0ADB0097892B /* PhotoEditorVC.m in Sources */,
+				160D291F1ECB0ADB0097892B /* RegisterOneVC.m in Sources */,
+				160D29721ECB10380097892B /* JSONModel.m in Sources */,
+				160D29851ECB10660097892B /* JSONKeyMapper.m in Sources */,
+				160D297D1ECB10540097892B /* JSONAPI.m in Sources */,
+				160D29521ECB0B4C0097892B /* CloudinaryManager.m in Sources */,
+				160D29581ECB0B5D0097892B /* GoogleManager.m in Sources */,
+				160D298F1ECB10930097892B /* UIScrollView+EmptyDataSet.m in Sources */,
+				160D29231ECB0ADB0097892B /* ChatsListVC.m in Sources */,
+				160D28FE1ECB0AAA0097892B /* AsyncPhotoMediaItem.m in Sources */,
+				160D29351ECB0B1D0097892B /* AddProfileInfoCell.m in Sources */,
+				160D29211ECB0ADB0097892B /* UsersTVC.m in Sources */,
+				160D29281ECB0ADB0097892B /* FullScreenVC.m in Sources */,
+				160D29501ECB0B4C0097892B /* FIRStorageManager.m in Sources */,
+				160D294F1ECB0B4C0097892B /* StringValidator.m in Sources */,
+				16DEB4481ECC4757002DA113 /* TwitterManager.m in Sources */,
+				160D298B1ECB10850097892B /* Reachability.m in Sources */,
+				160D293C1ECB0B2F0097892B /* AddingUserCell.m in Sources */,
+				160D29251ECB0ADB0097892B /* ChatPhotoEditVC.m in Sources */,
+				160D29241ECB0ADB0097892B /* ChatManageVC.m in Sources */,
+				160D28BC1ECB080B0097892B /* main.m in Sources */,
+				160D29431ECB0B370097892B /* ChatListCell.m in Sources */,
+				160D29731ECB10380097892B /* JSONModelClassProperty.m in Sources */,
+				160D28FF1ECB0AAA0097892B /* AsyncVideoMediaItem.m in Sources */,
+				160D297E1ECB10540097892B /* JSONHTTPClient.m in Sources */,
+				160D28FD1ECB0AAA0097892B /* MessagesData.m in Sources */,
+				160D292D1ECB0AF00097892B /* SWRevealViewController.m in Sources */,
+				160D29571ECB0B5D0097892B /* FacebookManager.m in Sources */,
+				160D29291ECB0ADB0097892B /* NewProfileVC.m in Sources */,
+				160D29001ECB0AAA0097892B /* Chat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		160D28C81ECB080B0097892B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				160D28C91ECB080B0097892B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		160D28CC1ECB080B0097892B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		160D28CD1ECB080B0097892B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		160D28CF1ECB080B0097892B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40F3BD8954DF70F5A301919 /* Pods-FirebaseChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseChat/FirebaseChat.entitlements;
+				DEVELOPMENT_TEAM = RWTS9RG3UW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/FirebaseChat\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQMessagesViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/TOCropViewController\"",
+				);
+				INFOPLIST_FILE = FirebaseChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novuslogics.FirebaseChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		160D28D01ECB080B0097892B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08F360313DB2153DF177102 /* Pods-FirebaseChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseChat/FirebaseChat.entitlements;
+				DEVELOPMENT_TEAM = RWTS9RG3UW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/FirebaseChat\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Core/Sources",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQMessagesViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer\"",
+					"\"${PODS_ROOT}/Headers/Public/Protobuf\"",
+					"\"${PODS_ROOT}/Headers/Public/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/TOCropViewController\"",
+				);
+				INFOPLIST_FILE = FirebaseChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novuslogics.FirebaseChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		160D28B21ECB080B0097892B /* Build configuration list for PBXProject "FirebaseChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160D28CC1ECB080B0097892B /* Debug */,
+				160D28CD1ECB080B0097892B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		160D28CE1ECB080B0097892B /* Build configuration list for PBXNativeTarget "FirebaseChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160D28CF1ECB080B0097892B /* Debug */,
+				160D28D01ECB080B0097892B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 160D28AF1ECB080B0097892B /* Project object */;
+}
